@@ -1,0 +1,170 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Education Section Styles */
+#education {
+    padding: 2rem;
+    background-color: #f4f4f4;
+}
+
+/* Education Header Styles */
+.education-header {
+    background-color: rgb(56, 66, 112);
+    border-radius: 8px;
+    padding: 15px 0;
+    margin-bottom: 2rem;
+    text-align: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.education-header h2 {
+    font-size: 2.2rem;
+    color: white;
+    margin: 0;
+}
+
+/* Flex container for education boxes */
+.education-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+/* Individual education box styles */
+.education-box {
+    background-color: #e2dcea;
+    border-radius: 8px;
+    padding: 1.8rem;
+    width: 100%;
+    margin-top: 20px;
+    max-width: 800px;
+    text-align: left;
+    color: black;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.education-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.education-box h3 {
+    margin: 0;
+    font-size: 1.6rem;
+    color: rgb(32, 25, 25);
+}
+
+.education-box .duration {
+    font-size: 1.1rem;
+    color: black;
+    margin-bottom: 0.5rem;
+}
+
+.education-box p {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+    color: black;
+}
+
+.education-box p:first-of-type {
+    font-weight: bold;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1440px) {
+    .education-header h2 {
+        font-size: 2rem;
+    }
+
+    .education-box {
+        padding: 1.6rem;
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .education-header {
+        width: 100%;
+        padding: 15px 0;
+    }
+
+    .education-header h2 {
+        font-size: 1.8rem;
+    }
+
+    .education-box {
+        padding: 1.5rem;
+        max-width: 80%; /* Reduced width for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .education-header {
+        width: 100%;
+        padding: 15px 0;
+    }
+
+    .education-header h2 {
+        font-size: 1.6rem;
+    }
+
+    .education-box {
+        padding: 1.2rem;
+        max-width: 90%;
+    }
+
+    .education-box h3 {
+        font-size: 1.4rem;
+    }
+
+    .education-box p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .education-header {
+        width: 100%;
+        padding: 15px 0;
+    }
+
+    .education-header h2 {
+        font-size: 1.3rem;
+    }
+
+    .education-box {
+        padding: 1rem;
+        max-width: 100%;
+    }
+
+    .education-box h3 {
+        font-size: 1.2rem;
+    }
+
+    .education-box p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Hover effect when cursor leaves the education box */
+.education-box {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.education-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.education-box:hover ~ .education-box {
+    transform: translateY(0);
+    box-shadow: none;
+}

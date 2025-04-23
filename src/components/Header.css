@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+header {
+    background: #2e2543;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #fff;
+}
+
+/* Navigation Links Styles */
+.nav-links {
+    display: flex;
+    margin-left: auto; /* Pushes the nav links to the right */
+}
+
+.nav-links ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links ul li {
+    margin-left: 1.5rem;
+}
+
+.nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.nav-links ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Adjust width as needed */
+    width: 250px;
+    height: 100%;
+    background: #2e2543;
+    transition: 0.3s;
+    z-index: 2;
+    padding-top: 60px; /* Adjust for header height */
+}
+
+.sidebar.open {
+    left: 0;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 15px 20px;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.25rem;
+    display: block;
+}
+
+.sidebar ul li a:hover {
+    background-color: #575757;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .sidebar {
+        width: 200px;
+    }
+
+    .sidebar.open {
+        left: 0;
+    }
+
+    .sidebar ul li a {
+        font-size: 1rem;
+    }
+
+    header h1 {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1rem;
+    }
+
+    .sidebar ul li a {
+        font-size: 1rem;
+    }
+}
