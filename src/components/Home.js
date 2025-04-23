@@ -18,7 +18,7 @@ const Home = () => {
                     </div>
                 </div>
                 <div className="home-image">
-                    <img src="photos\images.jpeg" alt="Anjali" />
+                    <img src="photos\WhatsApp Image 2024-07-30 at 7.39.10 PM.jpeg" alt="Anjali" />
                 </div>
             </div>
         </section>
