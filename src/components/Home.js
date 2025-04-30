@@ -13,9 +13,13 @@ const Home = () => {
                     <p>
                         Welcome to my web developer portfolio! I'm Anjali, a skilled and creative web developer with a passion for creating beautiful, responsive, and user-friendly websites. I've worked on a variety of web projects.
                     </p>
-                    <div className="home-buttons">
-                        <a href="#about" className="btn hire-me">About Me</a>
-                    </div>
+                    
+                    { 
+                    
+                    //<div className="home-buttons">
+                       // <a href="#about" className="btn hire-me">About Me</a>
+                   // </div>
+                     }
                 </div>
                 <div className="home-image">
                     <img src="photos\WhatsApp Image 2024-07-30 at 7.39.10 PM.jpeg" alt="Anjali" />
