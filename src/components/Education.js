@@ -14,7 +14,7 @@ const Education = () => {
                 <div className="education-box">
                     <h3>Swami Ramanand Teerth Marathwada University, Nanded</h3>
                     <p>Bachelor of Computer Applications (BCA), Third Year</p>
-                    <p>BCA Third Year Completed, 2025 with CGPA - 9.8</p>
+                    <p>BCA Third Year Completed, 2025 with CGPA - 9.14</p>
                     <p>BCA Second Year Completed, 2024 with CGPA - 9.8</p>
                     <p>BCA First Year Completed, 2023 with CGPA - 9.17</p>
                 </div>
